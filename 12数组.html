@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+  <div id="app">
+    <!--可以用括号的形式 第一个参数是当前索引 第二个是数组的每一项   index = $index-->
+    <div v-for="book in books">
+      {{book}}
+    </div>
+  </div>
+  <script>
+    var vm = new Vue({
+      el: '#app',
+      data: {
+        books: [
+          "苹果",
+          "苹果",
+          "苹果",
+          "苹果"
+        ]
+      }
+    })
+  </script>
+</body>
+</html>
