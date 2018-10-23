@@ -1,2 +1,2 @@
-this is for vuedemo
+vue
 
